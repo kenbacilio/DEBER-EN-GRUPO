@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de Cancha - Versión A</title>
+    <link rel="stylesheet" href="style-a.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <span class="menu-logo">⚽ CanchaFútbolApp</span>
+        <ul class="menu-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#galeria" id="linkGaleria">Galería</a></li>
+          <li><a href="#reservar" id="linkReservar">Reservar</a></li>
+          <li><a href="#contacto" id="linkContacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Login -->
+      <section class="login-section" id="loginSection">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+          <label for="usuario">Usuario:</label>
+          <input type="text" id="usuario" name="usuario" required />
+
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena" name="contrasena" required />
+
+          <button type="submit">Ingresar</button>
+        </form>
+      </section>
+
+      <!-- Formulario Reserva y Galería -->
+      <section
+        class="reserva-section"
+        id="reservaSection"
+        style="display: none"
+      >
+        <form class="reserva-form" id="reservaForm">
+          <h2>Reservar Cancha</h2>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="fecha">Fecha de reserva:</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" required />
+
+          <label for="tipo">Tipo de cancha:</label>
+          <select id="tipo" name="tipo">
+            <option value="cesped">Césped natural</option>
+            <option value="sintetica">Sintética</option>
+            <option value="techada">Techada</option>
+          </select>
+
+          <button type="submit">Reservar</button>
+        </form>
+
+        <!-- Galería -->
+        <section id="galeria" class="galeria">
+          <h2>Galería de Canchas</h2>
+          <div class="galeria-canchas">
+            <img src="img/Cancha_3_Natural.jpg" alt="Cancha Césped Natural" />
+            <img src="img/Cancha_1_Sintética.jpg" alt="Cancha Sintética" />
+            <img src="img/Cancha_2_Techada.jpg" alt="Cancha Techada" />
+          </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contacto">
+          <h2>Contacto</h2>
+          <p><strong>Nombre:</strong> Ignacio Veintimilla</p>
+          <p><strong>Teléfono:</strong> +593 939 289 106</p>
+          <p><strong>Email:</strong> reservatucancha@canchaapp.com</p>
+          <p><strong>Dirección:</strong> Av. Manabi y Av. Universitaria</p>
+        </section>
+      </section>
+    </main>
+
+    <footer>© 2025 CanchaFútbolApp - Todos los derechos reservados</footer>
+
+    <script src="script-a.js"></script>
+  </body>
+</html>
